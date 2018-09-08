@@ -6,10 +6,11 @@
 using namespace std;
 int main(){
 	float bal;
-	float wd;
+	int wd;
 	cin>>wd>>bal;
 	// cout<<(wd/5 == 0 && bal > wd)<<endl;
-	if(wd/5 && bal > wd){
+	// cout<<(wd%5 == 0 && bal-1 >= wd)<<endl;
+	if(wd%5 == 0 && bal-1 >= wd){
 		bal = bal-wd-0.50;
 		cout<<fixed<<setprecision(2)<<bal;
 	}else{
